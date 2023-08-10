@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+   
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: rgb(9, 226, 154);
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content: space-around;
+    /* background-color: pink; */
+    height: 50px;
+    padding: 10px;
+}
+
+.left {
+    /* border: 2px solid rgb(255, 0, 60); */
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.circle {
+    background-color: rgb(247, 245, 245);
+    width: 12%;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.banner {
+     background-color: rgb(247, 245, 245);
+    
+    height: 200px;
+    margin: 5px;
+}
+
+.right {
+    
+    width: 60%;
+    background-color: rgb(247, 245, 245);
+}
+
+.main {
+    /* border: 2px solid black; */
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.box {
+   
+    /* display: inline-block; */
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    /* border: 2px solid; */
+}
+
+.card {
+
+    height: 80px;
+    width: 40%;
+    border-radius: 100%;
+    align-self: center;
+    margin: 10px 0;
+
+
+}
+#x1{
+    background-color: rgb(242, 66, 66);
+}
+#x2{
+    background-color: rgb(9, 226, 154);
+}
+#x3{
+    background-color: yellow;
+}
+#x4{
+    background-color: rgb(174, 80, 165);
+}
+.p {
+    
+    height: 15px;
+    /* width: 50%; */
+    background-color: rgb(218, 216, 216);
+
+}
+@media screen and (min-width: 768px ) and (max-width: 1024px) {
+  
+    .box{
+        width: 35%;
+     
+    }
+    .main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+  .p{
+    margin: 2px;
+  }
+  .banner{
+    height: 200px;
+  }
+}
+@media screen and (min-width: 375px ) and (max-width: 768px) {
+  .main{
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap: wrap;    
+/* flex-direction: column; */
+  }
+  .box{
+    width: 100%;
+  }
+  .banner{
+    height: 120px;
+  }
+  .card{
+    width: 26%;
+  }
+  .p{
+    margin: 2px;
+  }
+  .circle{
+    width: 30%;
+  }
+  .navbar{
+    padding: 15px;
+  }
+}
